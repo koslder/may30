@@ -253,12 +253,13 @@ button.dismiss-btn {
 
 .loc-selection select {
     height: 37px;
-    background: #d9d9d9;
+    background: #fff;
     width: 96%;
     border-radius: 5px;
-    border: unset;
     padding-left: 15px;
     margin-bottom: 20px;
+    border: 1px solid #d9d9d9;
+    color: black !important;
 }
 
 .apply-btn {
