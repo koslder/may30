@@ -31,7 +31,7 @@ html body p,
 html body span, 
 html body h1, 
 html body h2, 
-html body h3, 
+html body h3,
 html body h4, 
 html body h5, 
 html body h6, 
@@ -78,6 +78,7 @@ html body a {
 .flag-logo {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .delivery-text p {
@@ -89,6 +90,7 @@ html body a {
     font-size: 12px;
     padding-top: 22px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .flag-logo img {
@@ -1388,6 +1390,40 @@ section.account {
     z-index: 999;
 }
 
+/* reccom */
+
+.rec-prod h1 {
+    color: #454545;
+    margin-top: 73px;
+    margin-bottom: 32px;
+    font-size: 30px;
+}
+
+.rec-prod span {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.rec-prod .products-grid {
+    margin-bottom: 113px;
+}
+
+.subheader-sc-container a {
+    font-size: 12px!important;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.recom {
+    padding-right: 24px;
+}
+/* recom end */
+
+/* pruchase history */
+
+
+
+/* purchase histroy end */
 
 
 /* Account end */
