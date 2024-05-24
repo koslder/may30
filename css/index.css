@@ -1083,7 +1083,7 @@ select#city {
 }
 
 form.selections {
-    width: 100%;
+    width: 97%;
     max-width: 100%;
     display: flex;
     justify-content: space-between;
