@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='../webdev/css/index.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>webdev</title>
+</head>
+<body>
+<section class="header">
+    <div class="header-sc-container">
+        <div class="site-logo">
+            <a href="homepage.html"><img src="../webdev/img/sitelogo.png" alt="sitelogo"></a>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="delivery">
+            <div class="delivery-text">
+                <p>Deliver to:</p>
+            </div>
+            <div class="flag-logo">
+                <img src="../webdev/icon/PH.png" alt="Philippines">
+                <p>PH</p>
+            </div>
+            <div class="flag-logo-modal hidden">
+                <p>We’re showing you items that ship to Philippines. To see items that ship to a different country, change your delivery address</p>
+                <div class="modal-buttons">
+                    <button class="dismiss-btn">Dismiss</button>
+                    <button class="change-address-btn">Change Address</button>
+                </div>
+            </div>
+        </div>
+        <div class="accountsettings">
+            <p>Account & Settings</p>
+            <div class="accountsettings-modal hidden">
+                <a class="login" href="signin.html">Sign in</a>
+                <div class="start-here">
+                    <p>New customer? <a href="#">Start here</a></p>
+                </div>
+                <div class="your-acc">
+                    <h6>Your Account</h6>
+                </div>
+                <div class="acc-list">
+                    <ul>
+                        <li><a href="account.php">Account</a></li>
+                        <li><a href="#">Purchase History</a></li>
+                        <li><a href="#">Recommendations</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="cart-logo">
+            <a href="checkout.php"><img src="../webdev/img/cart2.png" alt="cart"></a>
+        </div>
+    </div>
+<div class="overlay hidden"></div>
+
+<div class="location-modal hidden">
+    <div class="location-title">
+        <span>Choose your location</span>
+    </div>
+    <p>Delivery options and delivery speeds may vary for different locations</p>
+    <div class="loc-selection">
+        <select>
+            <option>Philippines</option>
+            <option>United States</option>
+            <option>Canada</option>
+        </select>
+        <button class="apply-btn">Apply</button>
+    </div>
+</div>
+</section>
+
+<section class="sub-header">
+    <div class="subheader-sc-container">
+        <img src="../webdev/icon/Hamburger.png" alt="Hamburger">
+        <p>Menu</p>
+    </div>
+</section>
+
+<section class="account">
+    <div class="account-container">
+        <div class="acc-content">
+            <div class="acc-head ">
+                <div class="acc-img">
+                    <img src="../webdev/img/100x100.png" alt="pp">
+                    <p class="change-image">Change image</p>
+                </div>
+                <div class="acc-details">
+                    <div class="member-id">
+                        <p>Your member ID:<span> 1234567890<span></p>
+                    </div>
+                    <div class="acc-email">
+                        <p>Email: <span>Ex****@gmail.com</span></p>
+                    </div>
+                    <div class="linked-num">
+                        <p>Linked Number: <span> 09*********</span></p>
+                    </div>
+                </div>
+                <div class="acc-change">
+                    <p id="change-email-btn">Change email address</p>
+                    <p id="change-phone-btn">Change mobile number</p>
+                </div>
+            </div>
+            <div class="acc-inputs">
+                <form>
+                    <div class="input-group">
+                        <label for="firstname">Firstname</label>
+                        <input type="text" id="firstname" name="firstname" value="John">
+                    </div>
+                    <div class="input-group">
+                        <label for="lastname">Lastname</label>
+                        <input type="text" id="lastname" name="lastname" value="Doe">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" value="Ex****@gmail.com">
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" id="phone" name="phone" value="09*********">
+                    </div>
+                    <div class="input-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" value="James ryan street">
+                    </div>
+                    <div class="input-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" value="New brunswick">
+                    </div>
+                    <div class="input-group">
+                        <label for="postcode">Post Code</label>
+                        <input type="text" id="postcode" name="postcode" value="4996">
+                    </div>
+                    <div class="input-group">
+                        <label for="country">Country</label>
+                        <input type="text" id="country" name="country" value="James island">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="modal-overlay hidden"></div>
+
+<!-- Email Modal -->
+<div id="emailModal" class= "hidden">
+    <div class="email-modal-content">
+        <h2>Change Email Address</h2>
+        <div class="email-input">
+            <p>Email: </p>
+            <input type="email" id="new-email">
+            <button id="btn-email">Confirm</button>
+        </div>
+    </div>
+</div>
+
+<!-- Phone Modal -->
+<div id="phoneModal" class= "hidden">
+    <div class="phone-modal-content">
+        <h2>Change Phonenumber</h2>
+        <p>Phonenumber: </p>
+        <div class="phone-input">
+            <input type="text" id="new-phone">
+            <button id="btn-phone">Confirm</button>
+        </div>
+    </div>
+</div>
+
+<!-- PP Modal -->
+<div id="ppModal" class= "hidden">
+    <div class="pp-modal-content">
+        <h2>Change Profile picture</h2>
+        <img src="../webdev/img/100x100.png" alt="pp">
+        <div class="pp-button">
+            <button id="btn-pp">Confirm</button>
+        </div>
+    </div>
+</div>
+<section class="footer">
+    <div class="footer-sc-container">
+        <div class="colm-1">
+            <div class="contactus">
+                <h1>Conctac us</h1>
+                <p>We're here to help you with all your gardening needs! Whether you have a question, need advice, or just want to share your garden successes, our team is eager to hear from you. Here’s how you can reach out:</p>
+            </div>
+            <div class="Phone">
+                <h1>Phone:</h1>
+                <p><span>(555)</span>123-4567</p>
+            </div>
+            <div class="Email">
+                <h1>Email</h1>
+                <p>support@greengardencenter.com</p>
+            </div>
+        </div>
+        <div class="colm-2">
+            <div class="social-links">
+                <ul>
+                    <li><a href=#><img src="../webdev/icon/facebook.png" alt="Facebook"></a></li>
+                    <li><a href=#><img src="../webdev/icon/youtube.png" alt="Youtube"></a></li>
+                    <li><a href=#><img src="../webdev/icon/instagram.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+            <div class="site-logo">
+                <a href="homepage.html"><img src="../webdev/img/sitelogo.png" alt="sitelogo"></a>
+            </div>
+        </div>
+    </div>
+</section>
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet">
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const flagLogo = document.querySelector('.flag-logo');
+        const flagLogoModal = document.querySelector('.flag-logo-modal');
+        const dismissBtn = document.querySelector('.dismiss-btn');
+        const changeAddressBtn = document.querySelector('.change-address-btn');
+        const accountSettings = document.querySelector('.accountsettings');
+        const accountSettingsModal = document.querySelector('.accountsettings-modal');
+        const overlay = document.querySelector('.overlay');
+        const locationModal = document.querySelector('.location-modal');
+        const applyBtn = document.querySelector('.apply-btn');
+        const changeImage = document.querySelector('.change-image');
+        const ppModal = document.querySelector('#ppModal');
+        const emailModal = document.querySelector('#emailModal');
+        const emailbtn = document.querySelector('#change-email-btn');
+        const phoneModal = document.querySelector('#phoneModal');
+        const phonebtn = document.querySelector('#change-phone-btn')
+        const modalOverlay = document.querySelector(".modal-overlay");
+        const btnPP = document.querySelector('#btn-pp');
+        const btnPhone = document.querySelector('#btn-phone')
+        const btnEmail = document.querySelector("#btn-email");
+
+        phonebtn.addEventListener('click', () => {
+            if (modalOverlay.classList.contains('hidden')) {
+                modalOverlay.classList.remove('hidden');
+            }
+            phoneModal.classList.toggle('hidden');
+        });
+
+        emailbtn.addEventListener('click', () => {
+            if (modalOverlay.classList.contains('hidden')) {
+                modalOverlay.classList.remove('hidden');
+            }
+            phoneModal.classList.toggle('hidden');
+        });
+
+        changeImage.addEventListener('click', () => {
+            if (modalOverlay.classList.contains('hidden')) {
+                modalOverlay.classList.remove('hidden');
+            }
+            ppModal.classList.toggle('hidden');
+        });
+
+        btnPP.addEventListener('click', () => {
+            ppModal.classList.add('hidden');
+            modalOverlay.classList.add('hidden');
+        })
+
+        btnPhone.addEventListener('click', () => {
+            phoneModal.classList.add('hidden');
+            modalOverlay.classList.add('hidden');
+        })
+
+        btnEmail.addEventListener('click', () => {
+            emailModal.classList.add('hidden');
+            modalOverlay.classList.add('hidden');
+        })
+
+        // Toggle flag logo modal
+        flagLogo.addEventListener('click', () => {
+            flagLogoModal.classList.toggle('hidden');
+            accountSettingsModal.classList.add('hidden'); // Ensure the account settings modal is hidden
+            overlay.classList.toggle('hidden');
+        });
+
+        // Dismiss flag logo modal
+        dismissBtn.addEventListener('click', () => {
+            flagLogoModal.classList.add('hidden');
+            overlay.classList.add('hidden');
+        });
+
+        // Open location modal
+        changeAddressBtn.addEventListener('click', () => {
+            locationModal.classList.remove('hidden');
+            flagLogoModal.classList.add('hidden');
+        });
+
+        // Apply location change
+        applyBtn.addEventListener('click', () => {
+            locationModal.classList.add('hidden');
+            overlay.classList.add('hidden');
+        });
+
+        // Toggle account settings modal
+        accountSettings.addEventListener('click', () => {
+            accountSettingsModal.classList.toggle('hidden');
+            flagLogoModal.classList.add('hidden'); // Ensure the flag logo modal is hidden
+            overlay.classList.toggle('hidden');
+        });
+
+        // Hide modals when clicking outside
+        document.addEventListener('click', (event) => {
+            if (!flagLogo.contains(event.target) && !flagLogoModal.contains(event.target) &&
+                !accountSettings.contains(event.target) && !accountSettingsModal.contains(event.target) &&
+                !locationModal.contains(event.target)) {
+                flagLogoModal.classList.add('hidden');
+                accountSettingsModal.classList.add('hidden');
+                locationModal.classList.add('hidden');
+                overlay.classList.add('hidden');
+            }
+        });
+
+    });
+
+</script>
+</body>
+</html>

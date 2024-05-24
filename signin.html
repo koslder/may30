@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        ::placeholder {
+            color: #DDDDDD !important;
+        }
+
+        body {
+            font-family: "Open sans", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            flex-direction: column;
+        }
+        p, span, a, h1, h2, h3, h4, h5, h6 {
+            margin: 0px;
+            padding: 0px;
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 20px 23px;
+            max-width: 100%;
+            width: 403px;
+        }
+
+        .login-container p {
+            color: #454545;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .login-input input {
+            width: 97%;
+            height: 26px;
+            padding-left: 10px;
+            border-radius: 5px;
+            border: 1px solid #d9d9d9;
+        }
+
+        .password-labels {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .password a {
+            display: flex;
+            justify-content: space-between;
+            font-size: 11px;
+            color: #0094FF;
+        }
+    </style>
+</head>
+<body>
+    <section class="login-form">
+        <img src="../webdev/img/sitelogo.png" alt="sitelogo">
+        <div class="login-container">
+            <div class="login-input">
+                <div class="username">
+                    <p>Account:</p>
+                    <input type="text" placeholder= "Email address or username">
+                </div>
+                <div class="password">
+                    <div class="password-labels">
+                    <p>Password:</p>
+                    <a href="#">Forgot Password?</a>
+                    </div>
+                    <input type="password" placeholder= "Password">
+                </div>
+            </div>
+            <div class="social-login">
+                <p>Sign in with:</p>
+                <img src="../webdev/icon/icon1.png" alt="Facebook">
+                <img src="../webdev/icon/icon2.png" alt="Google">
+                <img src="../webdev/icon/icon3.png" alt="Instagram">
+                <img src="../webdev/icon/icon4.png" alt="Twitter">
+            </div>
+        </div>
+    </section>
+    <section class="login-footer">
+        <div class="footer">
+            &copy; 2024, Greengardencenter.com, Inc. or its affiliates
+        </div>
+    </section>
+</body>
+</html>
