@@ -1,6 +1,6 @@
 /* Global */
 
-::placeholder, select {
+.account ::placeholder, select {
     color: #DBDBDB !important;
 }
 
