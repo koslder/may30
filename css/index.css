@@ -19,8 +19,8 @@ html body {
 }
 
 html body .sc-container {
-    margin: 0 80px !important;
-    padding: 0 20px !important;
+    margin: 0 80px;
+    padding: 0 20px;
 }
 
 ::placeholder {
@@ -67,12 +67,16 @@ html body a {
     justify-content: space-between;
 }
 
+.search {
+    width: 60%;
+}
+
 .search input[type="text"] {
-    width: 768px;
-    /* width: 560px; */
+    width: 100%;
     height: 39px;
     border-radius: 10px;
     padding-left: 10px;
+    border: unset;
 }
 
 .flag-logo {
@@ -424,6 +428,14 @@ section.footer {
     background-color: #283618;
 }
 
+.new .colm-1, .new .colm-2 {
+    text-align: center;
+}
+
+.new .product-description, .new .b-button {
+    text-align: left;
+}
+
 .footer .colm-1 {
     display: flex;
     flex-direction: column;
@@ -710,14 +722,15 @@ section.service {
 
 
 /* product */
+.left, .right {
+    width: 70%;
+}
 section.product, section.learnmore {
     background: linear-gradient(to right, #ACACAC 50%, white 50%);
     padding: 50px 0;
 }
 
-section.product .sc-container, section.related .sc-container {
-    margin: 0px 119px !important;
-}
+
 
 .breadcrumbs h1 {
     color: white;
@@ -939,6 +952,8 @@ section.thankyou {
     position: relative;
     text-align: center;
     background-image: url(../img/bgm.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 49px 0px;
 }
 
@@ -1274,11 +1289,11 @@ section.account {
     display: grid;
     grid-template-columns: repeat(2, 426px);
     column-gap: 71px; /* Gap between the columns */
+    justify-content: center;
 }
 
 .acc-inputs {
-    width: 63%;
-    margin: 0 auto;
+   
     padding-top: 29px;
     padding-bottom: 58px;
 }
@@ -1420,20 +1435,250 @@ section.account {
 }
 /* recom end */
 
-/* pruchase history */
-
-
-
-/* purchase histroy end */
-
-
-/* Account end */
-
-
 @media screen and (max-width: 1440px) {
-    .thankyou-sc-container img {
-        max-width: 550px;
-        width: 100%;
-        height: auto;
+
+    .banner-sc-container .colm-1 .title h1 {
+        font-size: 42px;
     }
+
+    .sub-title h2 {
+        font-size: 18px;
+    }
+
+    .banner-sc-container .colm-1 .description p {
+        font-size: 13px;
+    }
+
+    .banner-sc-container img, .banner-sc-container .colm-1 {
+        width: 100%;
+    }
+
+    .banner-sc-container .colm-1 {
+        padding-bottom: 60px;
+    }
+
+    .service-description p {
+        font-size: 13px
+    }
+
+    .service-description span {
+        font-size: 10px;
+    }
+
+    .search {
+        width: 49%;
+    }
+
+    .second-sc-container .colm-1 img, .second-sc-container .colm-2 img {
+        width: 400px;
+        height: 320px;  
+    }
+
+    .left img {
+        width: 100%;
+    }
+
+    .learnmore .right p {
+        font-size: 13px;
+    }
+
+    .learnmore .right h2 {
+        font-size: 16px;
+    }
+
+    .right p:last-of-type {
+        margin-bottom: unset;
+    }
+
+    .big-img  {
+        width: 100%;
+    }
+
+    .product-info-contianer {
+        flex-wrap: wrap;
+        gap: 15px;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .product-info-col2 {
+        width: 65%;
+    }
+    
+    .checkout-titles {
+        align-items: flex-end;
+    }
+
+    .checkout-titles h2 {
+        font-size: 24px;
+    }
+
+    .checkout-titles h1 {
+        font-size: 30px;
+        margin-top: 25px;
+        margin-bottom: 35px;
+    }
+
+    .cart-items-details p, .qty p, .total p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .cart-items-details, .qty {
+        margin-right: 35px;
+    }
+
+    .qty, .total {
+        padding-bottom: 21px;
+    }
+
+    .ship-title h2 {
+        font-size: 18px;
+    }
+
+    .ship-title span {
+        font-size: 12px;
+    }
+
+    .ship-title {
+        gap: 15px;
+    }
+
+    form.selections{
+        width: 100%;
+    }
+
+    .checkout-buttons img {
+        width: 49%;
+    }
+    
+    .code button {
+        font-size: 13px;
+    }
+
+    .acc-inputs form{
+        grid-template-columns: repeat(2, 373px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    
+
+    .banner-sc-container img, .banner-sc-container .colm-1 {
+        width: 100%;
+        left: 27%;
+    }
+
+    .search {
+        width: 40%;
+    }
+
+    .banner-sc-container .colm-1 .title h1 {
+        font-size: 30px;
+    }
+
+    .sub-title h2 {
+        font-size: 15px;
+    }
+
+    .banner-sc-container .colm-1 .description p {
+        font-size: 11px;
+    }
+
+    .site-logo img {
+        width: 100%;
+    }
+
+    .site-logo {
+        width: 14%;
+    }
+
+    .delivery-text p {
+        font-size: 9px;
+    }
+
+    .flag-logo img {
+        margin-right: 2px;
+    }
+
+    .flag-logo p {
+        font-size: 14px;
+    }
+
+    .accountsettings p{
+        padding-top: 14px;
+    }
+
+    .cart-logo img {
+        margin: unset;
+    }
+
+    .service-logo img {
+        width: 20%;
+    }
+
+    .service-description p {
+        font-size: 10px;
+    }
+
+    .service-description span {
+        font-size: 8px;
+    }
+
+    .service-description p {
+        line-height: 8px;
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .newsletter h1 {
+        font-size: 18px;
+    }
+
+    .newsletter p {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    
+    .newsletter .txt {
+        max-width: 409px;
+    }
+
+    .second-sc-container {
+        flex-wrap: wrap;
+        gap: 100px;
+    }
+
+    .new .b-button {
+        text-align: center;
+    }
+
+    .learnmore-content {
+        gap: unset;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .banner-sc-container .colm-2 {
+        display: none;
+    }
+
+    .banner-sc-container .colm-1 {
+        padding: 60px 0px;
+    }
+
+
+}
+
+@media screen and (max-width: 320px) {
+    
 }
