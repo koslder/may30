@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Create Account - Green Garden Center</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 190px;
+            margin-bottom: 30px;
+        }
+
+        .create-account-box {
+            border: 1px solid #ddd;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .create-account-box h2 {
+            margin-bottom: 20px;
+        }
+
+        .create-account-box form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .create-account-box label {
+            text-align: left;
+            margin-bottom: 5px;
+            font-weight: bold;
+            width: 100%; 
+            max-width: 380px; 
+        }
+
+        .create-account-box input[type="text"],
+        .create-account-box input[type="password"],
+        .create-account-box input[type="email"] {
+            width: 100%; 
+            max-width: 380px; 
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .create-account-box button {
+            width: 100%; 
+            padding: 10px;
+            background-color: #5a7a35;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .create-account-box button:hover {
+            background-color: #4e6930;
+        }
+
+        .create-account-box p {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .create-account-box .terms {
+            font-size: 12px;
+            color: #666;
+            margin-top: 20px;
+        }
+
+        .create-account-box .signin-link {
+            margin-top: 20px;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+
+        .create-account-box a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .create-account-box a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="./img/sitelogo.png" alt="Green Garden Center Logo">
+        </div>
+        <div class="create-account-box">
+            <h2>Create Account</h2>
+            <form>
+                <label for="fullname">Your name:</label>
+                <input type="text" id="fullname" placeholder="Firstname and Lastname" required>
+                
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Password" required>
+                
+                <label for="repassword">Re-enter password:</label>
+                <input type="password" id="repassword" placeholder="Password" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Email" required>
+                
+                <button type="submit">Continue</button>
+            </form>
+            <p class="terms">By creating an account, you agree to Green Garden Center's <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.</p>
+            <p class="signin-link">Already have an account? <a href="signin.html">Sign in</a></p>
+        </div>
+    </div>
+</body>
+</html>
