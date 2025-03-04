@@ -1,266 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='./css/index.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
     <title>webdev</title>
 </head>
+
 <body>
-<section class="header">
-    <div class="header-sc-container">
-        <div class="site-logo">
-            <a href="homepage.html"><img src="./img/sitelogo.png" alt="sitelogo"></a>
-        </div>
-        <div class="search">
-            <input type="text" placeholder="Search...">
-        </div>
-        <div class="delivery">
-            <div class="delivery-text">
-                <p>Deliver to:</p>
+    <section class="header">
+        <div class="header-sc-container">
+            <div class="site-logo">
+                <a href="index.html"><img src="./img/sitelogo.png" alt="sitelogo"></a>
             </div>
-            <div class="flag-logo">
-                <img src="./icon/PH.png" alt="Philippines">
-                <p>PH</p>
+            <div class="search">
+                <input type="text" placeholder="Search...">
             </div>
-            <div class="flag-logo-modal hidden">
-                <p>We’re showing you items that ship to Philippines. To see items that ship to a different country, change your delivery address</p>
-                <div class="modal-buttons">
-                    <button class="dismiss-btn">Dismiss</button>
-                    <button class="change-address-btn">Change Address</button>
+            <div class="delivery">
+                <div class="delivery-text">
+                    <p>Deliver to:</p>
+                </div>
+                <div class="flag-logo">
+                    <img src="./icon/PH.png" alt="Philippines">
+                    <p>PH</p>
+                </div>
+                <div class="flag-logo-modal hidden">
+                    <p>We’re showing you items that ship to Philippines. To see items that ship to a different country,
+                        change your delivery address</p>
+                    <div class="modal-buttons">
+                        <button class="dismiss-btn">Dismiss</button>
+                        <button class="change-address-btn">Change Address</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="accountsettings">
-            <p>Account & Settings</p>
-            <div class="accountsettings-modal hidden">
-                <a class="login" href="signin.html">Sign in</a>
-                <div class="start-here">
-                    <p>New customer? <a href="signup.html">Start here</a></p>
-                </div>
-                <div class="your-acc">
-                    <h6>Your Account</h6>
-                </div>
-                <div class="acc-list">
-                    <ul>
-                        <li><a href="account.html">Account</a></li>
-                        <li><a href="purchasehistory.html">Purchase History</a></li>
-                        <li><a href="recommended.html">Recommendations</a></li>
-                    </ul>
+            <div class="accountsettings">
+                <p>Account & Settings</p>
+                <div class="accountsettings-modal hidden">
+                    <a class="login" href="signin.html">Sign in</a>
+                    <div class="start-here">
+                        <p>New customer? <a href="signup.html">Start here</a></p>
+                    </div>
+                    <div class="your-acc">
+                        <h6>Your Account</h6>
+                    </div>
+                    <div class="acc-list">
+                        <ul>
+                            <li><a href="account.html">Account</a></li>
+                            <li><a href="purchasehistory.html">Purchase History</a></li>
+                            <li><a href="recommended.html">Recommendations</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+            <div class="cart-logo">
+                <a href="checkout.html"><img src="./img/cart2.png" alt="cart"></a>
+            </div>
         </div>
-        <div class="cart-logo">
-            <a href="checkout.html"><img src="./img/cart2.png" alt="cart"></a>
-        </div>
-    </div>
-<div class="overlay hidden"></div>
+        <div class="overlay hidden"></div>
 
-<div class="location-modal hidden">
-    <div class="location-title">
-        <span>Choose your location</span>
-    </div>
-    <p>Delivery options and delivery speeds may vary for different locations</p>
-    <div class="loc-selection">
-        <select>
-            <option>Philippines</option>
-            <option>United States</option>
-            <option>Canada</option>
-        </select>
-        <button class="apply-btn">Apply</button>
-    </div>
-</div>
-</section>
-
-<section class="sub-header">
-    <div class="subheader-sc-container">
-        <img src="./icon/Hamburger.png" alt="Hamburger">
-        <p>Menu</p>
-    </div>
-</section>
-
-<section class="product">
-    <div class="sc-container">
-        <div class="breadcrumbs">
-            <h1>Home/Product/ProductName</h1>
+        <div class="location-modal hidden">
+            <div class="location-title">
+                <span>Choose your location</span>
+            </div>
+            <p>Delivery options and delivery speeds may vary for different locations</p>
+            <div class="loc-selection">
+                <select>
+                    <option>Philippines</option>
+                    <option>United States</option>
+                    <option>Canada</option>
+                </select>
+                <button class="apply-btn">Apply</button>
+            </div>
         </div>
-        <div class="product-info-contianer">
-            <div class="product-info-col1">
-                <div class="thumbnail">
-                    <img src="./img/plant18.png" alt="product">
-                    <img src="./img/plant18.png" alt="product">
-                </div>
+    </section>
+
+    <section class="sub-header">
+        <div class="subheader-sc-container">
+            <img src="./icon/Hamburger.png" alt="Hamburger">
+            <p>Menu</p>
+        </div>
+    </section>
+
+    <section class="product">
+        <div class="sc-container">
+            <div class="breadcrumbs">
+                <h1>Home/Product/ProductName</h1>
             </div>
-            <div class="product-info-col2">
-                <div class="big-img">
-                    <img src="./img/plant18.png" alt="plant">
+            <div class="product-info-contianer">
+                <div class="product-info-col1">
+                    <div class="thumbnail">
+                        <img src="./img/plant18.png" alt="product">
+                        <img src="./img/plant18.png" alt="product">
+                    </div>
                 </div>
-            </div>
-            <div class="product-info-col3">
-                <div class="product-desceription-container">
-                    <div class="product-title-container">
-                        <div class="product-details">
-                            <h1>Product Name</h1>
-                            <p>$10</p>
-                            <div class="ratings">
-                                <span>★★★★☆</span>
+                <div class="product-info-col2">
+                    <div class="big-img">
+                        <img src="./img/plant18.png" alt="plant">
+                    </div>
+                </div>
+                <div class="product-info-col3">
+                    <div class="product-desceription-container">
+                        <div class="product-title-container">
+                            <div class="product-details">
+                                <h1>Product Name</h1>
+                                <p>$10</p>
+                                <div class="ratings">
+                                    <span>★★★★☆</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="product-description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                    </div>
-                    <div class="product-button">
-                        <a href="checkout.html">Add to cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="related">
-    <div class="sc-container">
-        <div class="related-container">
-            <h1>Related Products</h1>
-        </div>
-        <div class="related-maincontent">
-            <div class="related-product">
-                <div class="related-image">
-                    <a href="product.html">
-                        <img src="./img/plant18.png" alt="plant">
-                    </a>
-                </div>
-                <div class="related-description">
-                    <h1>Product Name</h1>
-                    <p>$10</p>
-                    <div class="ratings">
-                        <span>★★★★★</span>
-                    </div>
-                </div>
-            </div>
-            <div class="related-product">
-                <div class="related-image">
-                    <a href="product.html">
-                        <img src="./img/plant18.png" alt="plant">
-                    </a>
-                </div>
-                <div class="related-description">
-                    <h1>Product Name</h1>
-                    <p>$10</p>
-                    <div class="ratings">
-                        <span>★★★★★</span>
-                    </div>
-                </div>
-            </div>
-            <div class="related-product">
-                <div class="related-image">
-                    <a href="product.html">
-                        <img src="./img/plant18.png" alt="plant">
-                    </a>
-                </div>
-                <div class="related-description white">
-                    <h1>Product Name</h1>
-                    <p>$10</p>
-                    <div class="ratings">
-                        <span>★★★★★</span>
+                        <div class="product-description">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        </div>
+                        <div class="product-button">
+                            <a href="checkout.html">Add to cart</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<section class="footer">
-    <div class="footer-sc-container">
-        <div class="colm-1">
-            <div class="contactus">
-                <h1>Contact us</h1>
-                <p>We're here to help you with all your gardening needs! Whether you have a question, need advice, or just want to share your garden successes, our team is eager to hear from you. Here’s how you can reach out:</p>
+    </section>
+    <section class="related">
+        <div class="sc-container">
+            <div class="related-container">
+                <h1>Related Products</h1>
             </div>
-            <div class="Phone">
-                <h1>Phone:</h1>
-                <p><span>(555)</span>123-4567</p>
-            </div>
-            <div class="Email">
-                <h1>Email</h1>
-                <p>support@greengardencenter.com</p>
+            <div class="related-maincontent">
+                <div class="related-product">
+                    <div class="related-image">
+                        <a href="product.html">
+                            <img src="./img/plant18.png" alt="plant">
+                        </a>
+                    </div>
+                    <div class="related-description">
+                        <h1>Product Name</h1>
+                        <p>$10</p>
+                        <div class="ratings">
+                            <span>★★★★★</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="related-product">
+                    <div class="related-image">
+                        <a href="product.html">
+                            <img src="./img/plant18.png" alt="plant">
+                        </a>
+                    </div>
+                    <div class="related-description">
+                        <h1>Product Name</h1>
+                        <p>$10</p>
+                        <div class="ratings">
+                            <span>★★★★★</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="related-product">
+                    <div class="related-image">
+                        <a href="product.html">
+                            <img src="./img/plant18.png" alt="plant">
+                        </a>
+                    </div>
+                    <div class="related-description white">
+                        <h1>Product Name</h1>
+                        <p>$10</p>
+                        <div class="ratings">
+                            <span>★★★★★</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="colm-2">
-            <div class="social-links">
-                <ul>
-                    <li><a href=#><img src="./icon/facebook.png" alt="Facebook"></a></li>
-                    <li><a href=#><img src="./icon/youtube.png" alt="Youtube"></a></li>
-                    <li><a href=#><img src="./icon/instagram.png" alt="Instagram"></a></li>
-                </ul>
+    </section>
+
+    <section class="footer">
+        <div class="footer-sc-container">
+            <div class="colm-1">
+                <div class="contactus">
+                    <h1>Contact us</h1>
+                    <p>We're here to help you with all your gardening needs! Whether you have a question, need advice,
+                        or just want to share your garden successes, our team is eager to hear from you. Here’s how you
+                        can reach out:</p>
+                </div>
+                <div class="Phone">
+                    <h1>Phone:</h1>
+                    <p><span>(555)</span>123-4567</p>
+                </div>
+                <div class="Email">
+                    <h1>Email</h1>
+                    <p>support@greengardencenter.com</p>
+                </div>
             </div>
-            <div class="site-logo">
-                <a href="homepage.html"><img src="./img/sitelogo.png" alt="sitelogo"></a>
+            <div class="colm-2">
+                <div class="social-links">
+                    <ul>
+                        <li><a href=#><img src="./icon/facebook.png" alt="Facebook"></a></li>
+                        <li><a href=#><img src="./icon/youtube.png" alt="Youtube"></a></li>
+                        <li><a href=#><img src="./icon/instagram.png" alt="Instagram"></a></li>
+                    </ul>
+                </div>
+                <div class="site-logo">
+                    <a href="index.html"><img src="./img/sitelogo.png" alt="sitelogo"></a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const flagLogo = document.querySelector('.flag-logo');
-        const flagLogoModal = document.querySelector('.flag-logo-modal');
-        const dismissBtn = document.querySelector('.dismiss-btn');
-        const changeAddressBtn = document.querySelector('.change-address-btn');
-        const accountSettings = document.querySelector('.accountsettings');
-        const accountSettingsModal = document.querySelector('.accountsettings-modal');
-        const overlay = document.querySelector('.overlay');
-        const locationModal = document.querySelector('.location-modal');
-        const applyBtn = document.querySelector('.apply-btn');
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const flagLogo = document.querySelector('.flag-logo');
+            const flagLogoModal = document.querySelector('.flag-logo-modal');
+            const dismissBtn = document.querySelector('.dismiss-btn');
+            const changeAddressBtn = document.querySelector('.change-address-btn');
+            const accountSettings = document.querySelector('.accountsettings');
+            const accountSettingsModal = document.querySelector('.accountsettings-modal');
+            const overlay = document.querySelector('.overlay');
+            const locationModal = document.querySelector('.location-modal');
+            const applyBtn = document.querySelector('.apply-btn');
 
-         // Toggle flag logo modal
-         flagLogo.addEventListener('click', () => {
-            flagLogoModal.classList.toggle('hidden');
-            accountSettingsModal.classList.add('hidden'); // Ensure the account settings modal is hidden
-            overlay.classList.toggle('hidden');
-        });
+            // Toggle flag logo modal
+            flagLogo.addEventListener('click', () => {
+                flagLogoModal.classList.toggle('hidden');
+                accountSettingsModal.classList.add('hidden'); // Ensure the account settings modal is hidden
+                overlay.classList.toggle('hidden');
+            });
 
-        // Dismiss flag logo modal
-        dismissBtn.addEventListener('click', () => {
-            flagLogoModal.classList.add('hidden');
-            overlay.classList.add('hidden');
-        });
-
-        // Open location modal
-        changeAddressBtn.addEventListener('click', () => {
-            locationModal.classList.remove('hidden');
-            flagLogoModal.classList.add('hidden');
-        });
-
-        // Apply location change
-        applyBtn.addEventListener('click', () => {
-            locationModal.classList.add('hidden');
-            overlay.classList.add('hidden');
-        });
-
-        // Toggle account settings modal
-        accountSettings.addEventListener('click', () => {
-            accountSettingsModal.classList.toggle('hidden');
-            flagLogoModal.classList.add('hidden'); // Ensure the flag logo modal is hidden
-            overlay.classList.toggle('hidden');
-        });
-
-        // Hide modals when clicking outside
-        document.addEventListener('click', (event) => {
-            if (!flagLogo.contains(event.target) && !flagLogoModal.contains(event.target) &&
-                !accountSettings.contains(event.target) && !accountSettingsModal.contains(event.target) &&
-                !locationModal.contains(event.target)) {
+            // Dismiss flag logo modal
+            dismissBtn.addEventListener('click', () => {
                 flagLogoModal.classList.add('hidden');
-                accountSettingsModal.classList.add('hidden');
+                overlay.classList.add('hidden');
+            });
+
+            // Open location modal
+            changeAddressBtn.addEventListener('click', () => {
+                locationModal.classList.remove('hidden');
+                flagLogoModal.classList.add('hidden');
+            });
+
+            // Apply location change
+            applyBtn.addEventListener('click', () => {
                 locationModal.classList.add('hidden');
                 overlay.classList.add('hidden');
-            }
-        });
+            });
 
-    });
-</script>
+            // Toggle account settings modal
+            accountSettings.addEventListener('click', () => {
+                accountSettingsModal.classList.toggle('hidden');
+                flagLogoModal.classList.add('hidden'); // Ensure the flag logo modal is hidden
+                overlay.classList.toggle('hidden');
+            });
+
+            // Hide modals when clicking outside
+            document.addEventListener('click', (event) => {
+                if (!flagLogo.contains(event.target) && !flagLogoModal.contains(event.target) &&
+                    !accountSettings.contains(event.target) && !accountSettingsModal.contains(event.target) &&
+                    !locationModal.contains(event.target)) {
+                    flagLogoModal.classList.add('hidden');
+                    accountSettingsModal.classList.add('hidden');
+                    locationModal.classList.add('hidden');
+                    overlay.classList.add('hidden');
+                }
+            });
+
+        });
+    </script>
 
 </body>
+
 </html>

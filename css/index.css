@@ -1,6 +1,7 @@
 /* Global */
 
-.account ::placeholder, select {
+.account ::placeholder,
+select {
     color: #DBDBDB !important;
 }
 
@@ -9,13 +10,15 @@
     padding: 0;
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
     box-sizing: unset !important;
 }
 
 html body {
     font-family: "Poppins", sans-serif !important;
-    
+
 }
 
 html body .sc-container {
@@ -27,14 +30,14 @@ html body .sc-container {
     color: #DDDDDD !important;
 }
 
-html body p, 
-html body span, 
-html body h1, 
-html body h2, 
+html body p,
+html body span,
+html body h1,
+html body h2,
 html body h3,
-html body h4, 
-html body h5, 
-html body h6, 
+html body h4,
+html body h5,
+html body h6,
 html body a {
     margin: 0;
     padding: 0;
@@ -44,8 +47,8 @@ html body p {
     color: #fff;
 }
 
-html body ul, 
-html body ol, 
+html body ul,
+html body ol,
 html body a {
     list-style: none !important;
     text-decoration: none !important;
@@ -58,7 +61,7 @@ html body a {
     background-color: #283618;
 }
 
-.header-sc-container{
+.header-sc-container {
     margin: 0 0px;
     padding: 0 40px;
     display: flex;
@@ -104,7 +107,8 @@ html body a {
 /* header end */
 
 /* Modals */
-.hidden, .hide {
+.hidden,
+.hide {
     display: none;
 }
 
@@ -143,7 +147,8 @@ html body a {
     font-size: 14px;
 }
 
-.flag-logo-modal, .accountsettings-modal {
+.flag-logo-modal,
+.accountsettings-modal {
     position: absolute;
     background-color: #F1F1F1;
     border-radius: 5px;
@@ -171,7 +176,7 @@ html body a {
     top: 70px;
     right: 9%;
     width: 266px;
-    padding: 25px!important;
+    padding: 25px !important;
     border-radius: 1px solid #d9d9d9;
 }
 
@@ -181,7 +186,7 @@ html body a {
     text-align: center;
     padding: 8px 0;
     background-color: #FFF;
-    color: black!important;
+    color: black !important;
     border: 1px solid #d9d9d9;
     border-radius: 5px;
     cursor: pointer;
@@ -210,7 +215,8 @@ button.dismiss-btn {
 }
 
 /* Overlay */
-.overlay, .modal-overlay {
+.overlay,
+.modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -313,7 +319,8 @@ button.dismiss-btn {
     font-size: 14px;
 }
 
-.flag-logo-modal, .accountsettings-modal {
+.flag-logo-modal,
+.accountsettings-modal {
     position: absolute;
     background-color: #F1F1F1;
     border-radius: 5px;
@@ -341,7 +348,7 @@ button.dismiss-btn {
     top: 70px;
     right: 9%;
     width: 266px;
-    padding: 25px!important;
+    padding: 25px !important;
     border-radius: 1px solid #d9d9d9;
 }
 
@@ -351,7 +358,7 @@ button.dismiss-btn {
     text-align: center;
     padding: 8px 0;
     background-color: #FFF;
-    color: black!important;
+    color: black !important;
     border: 1px solid #d9d9d9;
     border-radius: 5px;
     cursor: pointer;
@@ -408,17 +415,20 @@ section.sub-header {
 /* sub-header end */
 /* Footer */
 .footer {
-    padding: 105px 0px 30px ;
+    padding: 105px 0px 30px;
 }
+
 .footer p {
     font-size: 19px;
     font-weight: 300;
 }
+
 .footer h1 {
     color: #fff;
     font-size: 28px;
     font-weight: 700;
 }
+
 .footer-sc-container {
     margin: 0 0px;
     padding: 0 40px;
@@ -428,11 +438,13 @@ section.footer {
     background-color: #283618;
 }
 
-.new .colm-1, .new .colm-2 {
+.new .colm-1,
+.new .colm-2 {
     text-align: center;
 }
 
-.new .product-description, .new .b-button {
+.new .product-description,
+.new .b-button {
     text-align: left;
 }
 
@@ -501,6 +513,7 @@ section.hero-banner {
 .banner-sc-container .colm-1 {
     padding-bottom: 135px;
 }
+
 .banner-sc-container .description {
     width: 320px;
 }
@@ -546,7 +559,8 @@ section.service {
     mix-blend-mode: plus-lighter;
 }
 
-.product-description p, .product-title p {
+.product-description p,
+.product-title p {
     color: #000;
     font-size: 15px;
 }
@@ -562,7 +576,8 @@ section.service {
     text-align: center;
 }
 
-.second-sc-container .colm-1 img, .second-sc-container .colm-2 img {
+.second-sc-container .colm-1 img,
+.second-sc-container .colm-2 img {
     padding-bottom: 30px;
 }
 
@@ -585,13 +600,14 @@ section.service {
     margin-top: 100px;
 }
 
-.second-sc-container .colm-1 img, .second-sc-container .colm-2 img {
+.second-sc-container .colm-1 img,
+.second-sc-container .colm-2 img {
     padding-bottom: 30px;
     max-height: 540px !important;
     height: 100%;
     width: 624px;
 }
-  
+
 
 /* service end */
 
@@ -617,14 +633,14 @@ section.service {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); 
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .new .title h1 {
-    position: relative; 
+    position: relative;
     color: white;
     font-size: 43px;
-    margin: 0; 
+    margin: 0;
     font-weight: 600;
 }
 
@@ -670,6 +686,7 @@ section.service {
     font-weight: 300;
     margin-bottom: 35px;
 }
+
 /* newsletter end */
 
 /* Products  */
@@ -716,16 +733,20 @@ section.service {
     color: #606C38;
     font-size: 16px;
 }
+
 /* products end */
 
 /* Testimonial */
 
 
 /* product */
-.left, .right {
+.left,
+.right {
     width: 70%;
 }
-section.product, section.learnmore {
+
+section.product,
+section.learnmore {
     background: linear-gradient(to right, #ACACAC 50%, white 50%);
     padding: 50px 0;
 }
@@ -783,7 +804,8 @@ section.product, section.learnmore {
 .product-details h1 {
     font-size: 18px;
     font-weight: 400;
-} 
+}
+
 .breadcrumbs h1 {
     color: white;
     font-size: 18px;
@@ -821,6 +843,7 @@ section.related {
 .related-maincontent {
     display: flex;
     gap: 68px;
+    justify-content: center;
 }
 
 .related-sc-container h1 {
@@ -831,12 +854,14 @@ section.related {
     padding-bottom: 35px;
 }
 
-.related-description p, .related-description h1 {
+.related-description p,
+.related-description h1 {
     color: black;
     font-size: 18px;
 }
 
-.related-description.white h1, .related-description.white p {
+.related-description.white h1,
+.related-description.white p {
     color: white;
     font-size: 18px;
 }
@@ -890,7 +915,7 @@ section.thankyou {
     font-family: 'Poppins', cursive;
     font-weight: 700;
     font-size: 43px;
-    color:white;
+    color: white;
     padding: 52px;
 }
 
@@ -959,7 +984,7 @@ section.thankyou {
 
 .testimonial-bg h1 {
     position: relative;
-    
+
     color: white;
 }
 
@@ -977,7 +1002,8 @@ section.thankyou {
     padding: 100px 0px;
 }
 
-.row p, .row h4 {
+.row p,
+.row h4 {
     color: #3D3D3D;
 }
 
@@ -994,7 +1020,7 @@ p.description {
     gap: 135px;
 }
 
-.learnmore .right h2{
+.learnmore .right h2 {
     color: black;
     font-size: 18px;
 }
@@ -1032,7 +1058,7 @@ section.checkout {
     color: black;
 }
 
-.cart-items img{
+.cart-items img {
     max-width: 138px;
     width: 100%;
     max-height: 132px;
@@ -1048,7 +1074,8 @@ section.checkout {
     line-height: 30px;
 }
 
-.qty, .total {
+.qty,
+.total {
     text-align: center;
 }
 
@@ -1170,11 +1197,13 @@ form.selections select {
     margin-bottom: 39px;
 }
 
-.cart-items-details, .qty {
+.cart-items-details,
+.qty {
     margin-right: 85px;
 }
 
-.qty, .total {
+.qty,
+.total {
     padding-bottom: 34px;
 }
 
@@ -1288,12 +1317,13 @@ section.account {
 .acc-inputs form {
     display: grid;
     grid-template-columns: repeat(2, 426px);
-    column-gap: 71px; /* Gap between the columns */
+    column-gap: 71px;
+    /* Gap between the columns */
     justify-content: center;
 }
 
 .acc-inputs {
-   
+
     padding-top: 29px;
     padding-bottom: 58px;
 }
@@ -1333,7 +1363,9 @@ section.account {
 
 /* Modal */
 
-.email-modal-content, .phone-modal-content, .pp-modal-content {
+.email-modal-content,
+.phone-modal-content,
+.pp-modal-content {
     background: #FFF;
     padding: 31px 20px;
     width: 405px;
@@ -1341,18 +1373,23 @@ section.account {
     border-radius: 5px;
 }
 
-.email-input input, .phone-input input {
+.email-input input,
+.phone-input input {
     height: 32px;
     border-radius: 5px;
     border: 1px solid #d9d9d9;
     margin-bottom: 17px;
 }
-.email-input, .phone-input {
+
+.email-input,
+.phone-input {
     display: flex;
     flex-direction: column;
 }
 
-.email-input button, .phone-input button, .pp-modal-content button{
+.email-input button,
+.phone-input button,
+.pp-modal-content button {
     color: white;
     font-size: 16px;
     font-weight: 500;
@@ -1362,7 +1399,9 @@ section.account {
     border: 1px solid #d9d9d9;
 }
 
-.email-modal-content h2, .phone-modal-content h2, .pp-modal-content h2 {
+.email-modal-content h2,
+.phone-modal-content h2,
+.pp-modal-content h2 {
     text-align: center;
     font-size: 25px;
     font-weight: 600;
@@ -1370,7 +1409,8 @@ section.account {
     margin-bottom: 27px;
 }
 
-.email-modal-content p, .phone-modal-content p {
+.email-modal-content p,
+.phone-modal-content p {
     color: #454545;
     font-weight: 600;
     font-size: 14px;
@@ -1384,7 +1424,7 @@ section.account {
 
 .pp-modal-content img {
     border-radius: 100%;
-    
+
 }
 
 .pp-button button {
@@ -1397,7 +1437,9 @@ section.account {
     margin-bottom: 20px;
 }
 
-#ppModal, #emailModal, #phoneModal {
+#ppModal,
+#emailModal,
+#phoneModal {
     /* Add any other styling you need for the modal */
     position: fixed;
     top: 50%;
@@ -1425,7 +1467,7 @@ section.account {
 }
 
 .subheader-sc-container a {
-    font-size: 12px!important;
+    font-size: 12px !important;
     font-weight: bold;
     cursor: pointer;
 }
@@ -1433,6 +1475,7 @@ section.account {
 .recom {
     padding-right: 24px;
 }
+
 /* recom end */
 
 @media screen and (max-width: 1440px) {
@@ -1449,7 +1492,8 @@ section.account {
         font-size: 13px;
     }
 
-    .banner-sc-container img, .banner-sc-container .colm-1 {
+    .banner-sc-container img,
+    .banner-sc-container .colm-1 {
         width: 100%;
     }
 
@@ -1469,9 +1513,10 @@ section.account {
         width: 49%;
     }
 
-    .second-sc-container .colm-1 img, .second-sc-container .colm-2 img {
+    .second-sc-container .colm-1 img,
+    .second-sc-container .colm-2 img {
         width: 400px;
-        height: 320px;  
+        height: 320px;
     }
 
     .left img {
@@ -1490,7 +1535,7 @@ section.account {
         margin-bottom: unset;
     }
 
-    .big-img  {
+    .big-img {
         width: 100%;
     }
 
@@ -1504,7 +1549,7 @@ section.account {
     .product-info-col2 {
         width: 65%;
     }
-    
+
     .checkout-titles {
         align-items: flex-end;
     }
@@ -1519,16 +1564,20 @@ section.account {
         margin-bottom: 35px;
     }
 
-    .cart-items-details p, .qty p, .total p {
+    .cart-items-details p,
+    .qty p,
+    .total p {
         font-size: 13px;
         line-height: 22px;
     }
 
-    .cart-items-details, .qty {
+    .cart-items-details,
+    .qty {
         margin-right: 35px;
     }
 
-    .qty, .total {
+    .qty,
+    .total {
         padding-bottom: 21px;
     }
 
@@ -1544,27 +1593,28 @@ section.account {
         gap: 15px;
     }
 
-    form.selections{
+    form.selections {
         width: 100%;
     }
 
     .checkout-buttons img {
         width: 49%;
     }
-    
+
     .code button {
         font-size: 13px;
     }
 
-    .acc-inputs form{
+    .acc-inputs form {
         grid-template-columns: repeat(2, 373px);
     }
 }
 
 @media screen and (max-width: 1024px) {
-    
 
-    .banner-sc-container img, .banner-sc-container .colm-1 {
+
+    .banner-sc-container img,
+    .banner-sc-container .colm-1 {
         width: 100%;
         left: 27%;
     }
@@ -1605,7 +1655,7 @@ section.account {
         font-size: 14px;
     }
 
-    .accountsettings p{
+    .accountsettings p {
         padding-top: 14px;
     }
 
@@ -1628,7 +1678,7 @@ section.account {
     .service-description p {
         line-height: 8px;
     }
-    
+
     .products-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1641,7 +1691,7 @@ section.account {
         font-size: 13px;
         line-height: 15px;
     }
-    
+
     .newsletter .txt {
         max-width: 409px;
     }
@@ -1661,10 +1711,11 @@ section.account {
         flex-direction: column;
     }
 
-    .left, .right {
+    .left,
+    .right {
         width: 100%;
     }
-    
+
 }
 
 @media screen and (max-width: 768px) {
@@ -1679,6 +1730,4 @@ section.account {
 
 }
 
-@media screen and (max-width: 320px) {
-    
-}
+@media screen and (max-width: 320px) {}
