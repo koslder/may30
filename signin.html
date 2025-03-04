@@ -1,172 +1,195 @@
 <html>
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <title>Login</title>
-        <style>
-            ::placeholder {
-                color: #DDDDDD;
-            }
-            .container {
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Login</title>
+    <style>
+        ::placeholder {
+            color: #DDDDDD;
+        }
+
+        .container {
             position: absolute;
             left: 50%;
             top: 50%;
             -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
             text-align: center;
-            font-family: "Poppins"!important;
-            }
-            .logo {
-                height:49px;
-                width: 173px;
-                margin-bottom: 49px;
-            
-            }
-            .logincontainer {
-                border: 1px solid #D9D9D9;
-                padding: 50px 20px 60px 20px;
-                text-align: left;
-                width: 405px;
-                border-radius: 5px;
-                margin: auto;
-                margin-bottom: 50px;
-               
-            }
-            .account {
-                border: 1px solid #D9D9D9;
-                width: 100%;
-                height: 26px;
-                border-radius: 5px;
-                padding-left: 10px;
-                margin-bottom: 13px;
-            }
-            .password {
-                border: 1px solid #D9D9D9;
-                width: 100%;
-                height: 26px;
-                margin-bottom: 12px;
-                border-radius: 5px;
-                padding-left: 10px;
-            }
-            .sign {
-                background-color: #606C38;
-                border: 1px solid #D9D9D9;
-                color: white;
-                width: 100%;
-                height: 32px;
-                border-radius: 5px;
-                margin-top: 16px;
-                margin-bottom: 6px;
-                font-size: 16px;
-                font-weight: bold;
-           }
-           .rounded-checkbox {
-                width: 16px;
-                height: 16px;
-                border-radius: 5px;
-                vertical-align: middle;
-                -webkit-appearance: none;
-                outline: none;
-                cursor: pointer;
-                background: #5470FF;
-            }
-            .rounded-checkbox:checked {
-                border-radius: 5px!important;
-                clip-path: circle(60% at 50% 50%);
-                appearance: auto;
-                background-color: #5470FF!important;
-                accent-color: #5470FF!important;;
-            } 
-            .forgot{
-                font-size: 11px;
-                color: #0094FF;
-                text-decoration: none;
-            }
-            .pass-container {
+            font-family: "Poppins" !important;
+        }
+
+        .logo {
+            height: 49px;
+            width: 173px;
+            margin-bottom: 49px;
+
+        }
+
+        .logincontainer {
+            border: 1px solid #D9D9D9;
+            padding: 50px 20px 60px 20px;
+            text-align: left;
+            width: 405px;
+            border-radius: 5px;
+            margin: auto;
+            margin-bottom: 50px;
+
+        }
+
+        .account {
+            border: 1px solid #D9D9D9;
+            width: 100%;
+            height: 26px;
+            border-radius: 5px;
+            padding-left: 10px;
+            margin-bottom: 13px;
+        }
+
+        .password {
+            border: 1px solid #D9D9D9;
+            width: 100%;
+            height: 26px;
+            margin-bottom: 12px;
+            border-radius: 5px;
+            padding-left: 10px;
+        }
+
+        .sign {
+            background-color: #606C38;
+            border: 1px solid #D9D9D9;
+            color: white;
+            width: 100%;
+            height: 32px;
+            border-radius: 5px;
+            margin-top: 16px;
+            margin-bottom: 6px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .rounded-checkbox {
+            width: 16px;
+            height: 16px;
+            border-radius: 5px;
+            vertical-align: middle;
+            -webkit-appearance: none;
+            outline: none;
+            cursor: pointer;
+            background: #5470FF;
+        }
+
+        .rounded-checkbox:checked {
+            border-radius: 5px !important;
+            clip-path: circle(60% at 50% 50%);
+            appearance: auto;
+            background-color: #5470FF !important;
+            accent-color: #5470FF !important;
+            ;
+        }
+
+        .forgot {
+            font-size: 11px;
+            color: #0094FF;
+            text-decoration: none;
+        }
+
+        .pass-container {
             display: flex;
             justify-content: space-between;
-            }
-            .social {
-                gap: 15px;
-                display: flex;
-                align-items: center;
-                padding-top: 25px;
-                
-            }
-            .facebook, .google, .instagram, .twitter {
-                width:28px;
-                height: 28px;
-                cursor: pointer;
-            }
-            
-            .signinwith {
-                color: #545454;
-            }
-            .horizontaldown {
-                width: 650px;
-                margin-bottom: 40px;
-            }
-            .textinthebottom {
-                color: #D9D9D9;
-                margin: auto;
-            }
+        }
 
-            .logincontainer p {
-                font-size: 12px;
-                font-weight: 600;
-                color: #545454;
-                margin: 0;
-                margin-bottom: 3px;
-            }
+        .social {
+            gap: 15px;
+            display: flex;
+            align-items: center;
+            padding-top: 25px;
 
-            .logincontainer label {
-                font-size: 12px;
-                font-weight: 600;
-                color: #545454;
-            }
+        }
 
-            .creataccount {
-                padding-bottom: 40px;
-                border-bottom: 1px solid #d9d9d9;
-            }
+        .facebook,
+        .google,
+        .instagram,
+        .twitter {
+            width: 28px;
+            height: 28px;
+            cursor: pointer;
+        }
 
-            .creataccount a {
-                text-decoration: none;
-                font-size: 11px;
-                color: #0094FF;
-                margin-bottom: 40px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class='container'>
-            <img class="logo" src="./img/sitelogo.png" alt="logo">
-            <div class="logincontainer">
-                <p>Account: </p>
-                <input class="account" type="text" placeholder="email address or username">
-                <div class="pass-container" >
-                    <p>Password</p>
-                    <a href="forgot.html" class="forgot">Forgot password</a>
-                </div>
-                <input class="password" type="password" placeholder="password">
-                <input type="checkbox" class="rounded-checkbox" id="checkbox"> 
-                <label for="checkbox">Stay signed in</label>
-                <button class="sign">Sign in</button>
-                <div class="creataccount">
-                    <a href="signup.html">Create Account</a>
-                </div>
-                <div class="social">
-                    <p class="signinwith">Sign in with:</p>
-                    <img class="facebook" src="./icon/icon1.png" alt="facebook">
-                    <img class="google" src="./icon/icon2.png" alt="google">
-                    <img class="instagram" src="./icon/icon3.png" alt="instagram">
-                    <img class="twitter" src="./icon/icon4.png" alt="twitter">
-                </div>
+        .signinwith {
+            color: #545454;
+        }
+
+        .horizontaldown {
+            width: 650px;
+            margin-bottom: 40px;
+        }
+
+        .textinthebottom {
+            color: #D9D9D9;
+            margin: auto;
+        }
+
+        .logincontainer p {
+            font-size: 12px;
+            font-weight: 600;
+            color: #545454;
+            margin: 0;
+            margin-bottom: 3px;
+        }
+
+        .logincontainer label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #545454;
+        }
+
+        .creataccount {
+            padding-bottom: 40px;
+            border-bottom: 1px solid #d9d9d9;
+        }
+
+        .creataccount a {
+            text-decoration: none;
+            font-size: 11px;
+            color: #0094FF;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='container'>
+        <img class="logo" src="./img/sitelogo.png" alt="logo">
+        <div class="logincontainer">
+            <p>Account: </p>
+            <input class="account" type="text" placeholder="email address or username">
+            <div class="pass-container">
+                <p>Password</p>
+                <a href="forgot.html" class="forgot">Forgot password</a>
             </div>
-            <hr class="horizontaldown">
-            <p class="textinthebottom">Â© 2024, Greengardencenter.com, Inc. or its affiliates</p>
+            <input class="password" type="password" placeholder="password">
+            <input type="checkbox" class="rounded-checkbox" id="checkbox">
+            <label for="checkbox">Stay signed in</label>
+            <button class="sign">Sign in</button>
+            <div class="creataccount">
+                <a href="signup.html">Create Account</a>
+            </div>
+            <div class="social">
+                <p class="signinwith">Sign in with:</p>
+                <img class="facebook" src="./icon/icon1.png" alt="facebook">
+                <img class="google" src="./icon/icon2.png" alt="google">
+                <img class="instagram" src="./icon/icon3.png" alt="instagram">
+                <img class="twitter" src="./icon/icon4.png" alt="twitter">
+            </div>
         </div>
-        
-    </body>
+        <hr class="horizontaldown">
+        <p class="textinthebottom">Â© 2024, Greengardencenter.com, Inc. or its affiliates</p>
+    </div>
+
+</body>
+
 </html>
